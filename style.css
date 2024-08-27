@@ -1,0 +1,799 @@
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    
+    }
+
+    /* *{
+        border: 2px solid green;
+        
+    } */
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        
+
+    }
+
+    .div1 {
+        height: 25px;
+        margin-top: 6px;
+        font-size: 25px;
+        color: rgb(181, 1, 1);
+        margin-right: 40px;
+
+    }
+
+    #imgp {
+        width: 40px;
+        margin-left: 50px;
+        border-radius: 0px 35px 0px 35px;
+        box-shadow: 1px 1px 10px rgb(181, 1, 1);
+
+    }
+
+    #btn1 {
+        height: 40px;
+        width: 100px;
+        border: groove;
+        color: white;
+        background-color: black;
+        font-size: 17px;
+        border-radius: 15px 0px 15px 0px;
+        box-shadow: 1px 1px 10px black;
+    }
+
+    #btn1:hover {
+        outline: 3px solid rgb(142, 2, 2);
+        border-radius: 15px;
+        box-shadow: 1px 1px 10px rgb(181, 1, 1);
+    }
+
+    #btn2 {
+        height: 40px;
+        width: 80px;
+        border: groove;
+        color: black;
+        font-size: 17px;
+        border-radius: 15px 0px 15px 0px;
+        box-shadow: 1px 1px 10px black;
+    }
+
+    #btn2:hover {
+        color: black;
+        background-color: gainsboro;
+        outline: 3px solid rgb(142, 2, 2);
+        border-radius: 15px;
+        box-shadow: 1px 1px 10px rgb(181, 1, 1);
+        border-color: rgba(0, 0, 0, 0.612);
+    }
+
+    #btn3 {
+        height: 40px;
+        width: 100px;
+        border: groove;
+        color: white;
+        background-color: rgb(181, 1, 1);
+        font-size: 17px;
+        margin-right: 40px;
+        border-radius: 15px 0px 15px 0px;
+        box-shadow: 1px 1px 10px black;
+    }
+
+    #btn3:hover {
+        color: white;
+        background-color: rgb(142, 2, 2);
+        outline: 3px solid black;
+        border-radius: 15px;
+    }
+
+    .div2>input {
+        height: 35px;
+        border: none;
+        outline: none;
+        border-bottom: 3px solid rgb(181, 1, 1);
+        background-color: transparent;
+
+
+    }
+
+
+    h1 {
+        text-align:center;
+        margin-top: 50px;
+        color: black;
+        
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .main2 {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    img:hover {
+        border-radius: 35px 35px 35px 35px;
+        box-shadow: 1px 1px 10px rgb(181, 1, 1);
+    }
+
+
+    .main3 {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+
+    }
+
+    .main4 {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+
+    }
+
+    .main5 {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+
+    }
+
+    .main6 {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+
+    }
+
+    .img1 {
+        height: 400px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    .bt1 {
+        position: absolute;
+        top: 379px;
+        left: 176px;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        height: 404px;
+        border-radius: 35px 0px 35px 0px;
+        background-color: rgba(0, 0, 0, 0.593);
+        border: groove;
+        color: khaki; 
+        outline: 3px;
+        width: 272px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px black;
+
+    }
+
+
+    .bt1:active {
+        top: 377px;
+        left: 176px;
+        font-size: 30px;
+        visibility: hidden;
+
+
+    }
+
+    .bt2 {
+        position: absolute;
+        top: 714px;
+        left: 176px;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        height: 252px;
+        border-radius: 35px 0px 35px 0px;
+        background-color: rgba(0, 0, 0, 0.593);
+        border: groove;
+        color: khaki;
+        outline: 3px;
+        width: 272px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px black;
+
+    }
+
+
+    .bt2:active {
+        top: 377px;
+        left: 176px;
+        font-size: 30px;
+        visibility: hidden;
+
+
+    }
+
+    .bt3 {
+        position: absolute;
+        top: 1023px;
+        left: 176px;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        height: 353px;
+        border-radius: 35px 0px 35px 0px;
+        background-color: rgba(0, 0, 0, 0.593);
+        border: groove;
+        color: khaki;
+        outline: 3px;
+        width: 272px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px black;
+
+    }
+
+
+    .bt3:active {
+        top: 377px;
+        left: 176px;
+        font-size: 30px;
+        visibility: hidden;
+
+
+    }
+
+    .bt4 {
+        position: absolute;
+        top: 1358px;
+        left: 176px;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        height: 303px;
+        border-radius: 35px 0px 35px 0px;
+        background-color: rgba(0, 0, 0, 0.593);
+        border: groove;
+        color: khaki;
+        outline: 3px;
+        width: 272px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px black;
+
+    }
+
+
+    .bt4:active {
+        top: 377px;
+        left: 176px;
+        font-size: 30px;
+        visibility: hidden;
+
+
+    }
+
+    .bt5 {
+        position: absolute;
+        top: 303px;
+        left: 467px;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        height: 251px;
+        border-radius: 35px 0px 35px 0px;
+        background-color: rgba(0, 0, 0, 0.593);
+        border: groove;
+        color: khaki;
+        outline: 3px;
+        width: 272px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px black;
+
+    }
+
+
+    .bt5:active {
+        top: 377px;
+        left: 176px;
+        font-size: 30px;
+        visibility: hidden;
+
+
+    }
+
+    .bt6 {
+        position: absolute;
+        top: 613px;
+        left: 468px;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        height: 353px;
+        border-radius: 35px 0px 35px 0px;
+        background-color: rgba(0, 0, 0, 0.593);
+        border: groove;
+        color: khaki;
+        outline: 3px;
+        width: 272px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px black;
+
+    }
+
+
+    .bt6:active {
+        top: 377px;
+        left: 176px;
+        font-size: 30px;
+        visibility: hidden;
+
+
+    }
+
+    .bt7 {
+        position: absolute;
+        top: 1048px;
+        left: 468px;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        height: 504px;
+        border-radius: 35px 0px 35px 0px;
+        background-color: rgba(0, 0, 0, 0.593);
+        border: groove;
+        color: khaki;
+        outline: 3px;
+        width: 272px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px black;
+
+    }
+
+
+    .bt7:active {
+        top: 377px;
+        left: 176px;
+        font-size: 30px;
+        visibility: hidden;
+
+
+    }
+
+    .bt8 {
+        position: absolute;
+        top: 1409px;
+        left: 468px;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        height: 200px;
+        border-radius: 35px 0px 35px 0px;
+        background-color: rgba(0, 0, 0, 0.593);
+        border: groove;
+        color: khaki;
+        outline: 3px;
+        width: 272px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px black;
+
+    }
+
+
+    .bt8:active {
+        top: 377px;
+        left: 176px;
+        font-size: 30px;
+        visibility: hidden;
+
+
+    }
+
+    .bt9 {
+        position: absolute;
+        top: 379px;
+        left: 760px;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        height: 404px;
+        border-radius: 35px 0px 35px 0px;
+        background-color: rgba(0, 0, 0, 0.593);
+        border: groove;
+        color: khaki;
+        outline: 3px;
+        width: 272px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px black;
+
+    }
+
+
+    .bt9:active {
+        top: 377px;
+        left: 176px;
+        font-size: 30px;
+        visibility: hidden;
+
+
+    }
+
+    .bt10 {
+        position: absolute;
+        top: 714px;
+        left: 760px;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        height: 252px;
+        border-radius: 35px 0px 35px 0px;
+        background-color: rgba(0, 0, 0, 0.593);
+        border: groove;
+        color:khaki;
+        outline: 3px;
+        width: 272px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px black;
+
+    }
+
+
+    .bt10:active {
+        top: 377px;
+        left: 176px;
+        font-size: 30px;
+        visibility: hidden;
+
+
+    }
+
+    .bt11 {
+        position: absolute;
+        top: 1023px;
+        left: 760px;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        height: 353px;
+        border-radius: 35px 0px 35px 0px;
+        background-color: rgba(0, 0, 0, 0.593);
+        border: groove;
+        color: khaki;
+        outline: 3px;
+        width: 272px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px black;
+
+    }
+
+
+    .bt11:active {
+        top: 377px;
+        left: 176px;
+        font-size: 30px;
+        visibility: hidden;
+
+
+    }
+
+    .bt12 {
+        position: absolute;
+        top: 1358px;
+        left: 760px;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        height: 303px;
+        border-radius: 35px 0px 35px 0px;
+        background-color: rgba(0, 0, 0, 0.593);
+        border: groove;
+        color: khaki;
+        outline: 3px;
+        width: 272px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px black;
+
+    }
+
+
+    .bt12:active {
+        top: 377px;
+        left: 176px;
+        font-size: 30px;
+        visibility: hidden;
+
+
+    }
+
+    .bt13 {
+        position: absolute;
+        top: 303px;
+        left: 1052px;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        height: 251px;
+        border-radius: 35px 0px 35px 0px;
+        background-color: rgba(0, 0, 0, 0.593);
+        border: groove;
+        color: khaki;
+        outline: 3px;
+        width: 272px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px black;
+
+    }
+
+
+    .bt13:active {
+        top: 377px;
+        left: 176px;
+        font-size: 30px;
+        visibility: hidden;
+
+
+    }
+
+    .bt14 {
+        position: absolute;
+        top: 613px;
+        left: 1052px;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        height: 353px;
+        border-radius: 35px 0px 35px 0px;
+        background-color: rgba(0, 0, 0, 0.593);
+        border: groove;
+        color:khaki;
+        outline: 3px;
+        width: 272px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px black;
+
+    }
+
+
+    .bt14:active {
+        top: 377px;
+        left: 176px;
+        font-size: 30px;
+        visibility: hidden;
+
+
+    }
+
+    .bt15 {
+        position: absolute;
+        top: 1048px;
+        left: 1052px;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        height: 504px;
+        border-radius: 35px 0px 35px 0px;
+        background-color: rgba(0, 0, 0, 0.593);
+        border: groove;
+        color: khaki;
+        outline: 3px;
+        width: 272px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px black;
+
+    }
+
+
+    .bt15:active {
+        top: 377px;
+        left: 176px;
+        font-size: 30px;
+        visibility: hidden;
+
+
+    }
+
+    .bt16 {
+        position: absolute;
+        top: 1409px;
+        left: 1052px;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        height: 200px;
+        border-radius: 35px 0px 35px 0px;
+        background-color: rgba(0, 0, 0, 0.593);
+        border: groove;
+        color: khaki;
+        outline: 3px;
+        width: 272px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px black;
+
+    }
+
+
+    .bt16:active {
+        top: 377px;
+        left: 176px;
+        font-size: 30px;
+        visibility: hidden;
+
+
+    }
+
+    .bt17 {
+        position: absolute;
+        top: 379px;
+        left: 1343px;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        height: 401px;
+        border-radius: 35px 0px 35px 0px;
+        background-color: rgba(0, 0, 0, 0.593);
+        border: groove;
+        color:khaki;
+        outline: 3px;
+        width: 272px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px black;
+
+    }
+
+
+    .bt17:active {
+        top: 377px;
+        left: 176px;
+        font-size: 30px;
+        visibility: hidden;
+
+
+    }
+
+    .bt18 {
+        position: absolute;
+        top: 714px;
+        left: 1343px;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        height: 252px;
+        border-radius: 35px 0px 35px 0px;
+        background-color: rgba(0, 0, 0, 0.593);
+        border: groove;
+        color: khaki;
+        outline: 3px;
+        width: 272px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px black;
+
+    }
+
+
+    .bt18:active {
+        top: 377px;
+        left: 176px;
+        font-size: 30px;
+        visibility: hidden;
+
+
+    }
+
+    .bt19 {
+        position: absolute;
+        top: 1023px;
+        left: 1344px;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        height: 353px;
+        border-radius: 35px 0px 35px 0px;
+        background-color: rgba(0, 0, 0, 0.593);
+        border: groove;
+        color: khaki;
+        outline: 3px;
+        width: 272px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px black;
+
+    }
+
+
+    .bt19:active {
+        top: 377px;
+        left: 176px;
+        font-size: 30px;
+        visibility: hidden;
+
+
+    }
+
+    .bt20 {
+        position: absolute;
+        top: 1358px;
+        left: 1344px;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        height: 303px;
+        border-radius: 35px 0px 35px 0px;
+        background-color: rgba(0, 0, 0, 0.593);
+        border: groove;
+        color: khaki;
+        outline: 3px;
+        width: 272px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px black;
+
+    }
+
+    i{
+        color: aliceblue;
+    }
+
+    i:hover{
+        color: rgb(101, 0, 0);
+        
+    }
+
+
+    .bt20:active {
+        top: 377px;
+        left: 176px;
+        font-size: 30px;
+        visibility: hidden;
+
+
+    }
+
+
+
+
+    .img2 {
+        height: 250px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img3 {
+        height: 350px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img4 {
+        height: 300px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img5 {
+        height: 250px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img6 {
+        height: 350px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img7 {
+        height: 500px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+    }
+
+    .img8 {
+        height: 200px;
+        width: 272px;
+        border-radius: 35px 0px 35px 0px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+
+
+
+    .gmain {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* gmain>img[class^="img"] {
+        filter: blur(10px);
+        border-radius: 80px;
+    } */
+</style>
